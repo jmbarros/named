@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 10800	; 3 hours
+t4it.local		IN SOA	t4it.local. t4it.local. (
+				1          ; serial
+				86400      ; refresh (1 day)
+				3600       ; retry (1 hour)
+				604800     ; expire (1 week)
+				10800      ; minimum (3 hours)
+				)
+			NS	t4it.local.
+			A	127.0.0.1
+$ORIGIN t4it.local.
+server01			A	192.168.0.10
